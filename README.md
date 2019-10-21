@@ -24,3 +24,6 @@ Selected public Common Lisp git repositories from our [Github account](https://g
    in Common Lisp
 * [sftp](https://github.com/franzinc/sftp) - an SFTP client written in
    Common Lisp
+
+[AllegroGraph examples](https://github.com/franzinc/agraph-examples)
+are in a different repository.
