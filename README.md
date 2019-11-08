@@ -1,6 +1,8 @@
 Allegro Common Lisp source code examples:
 
+* [base64-stream example](streams/base64/README.md) - decode base64 MIME files
 * [process-pool example](process-pool/README.md) - process pools
+* [rot13b-stream example](streams/rot13b/README.md) - encode/decode rot13 strings
 * [telnet-server example](telnet-server/README.md) - access a running
    server with `telnet`
 
