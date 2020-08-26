@@ -1,7 +1,9 @@
 Allegro Common Lisp source code examples:
 
+* [alisthash.cl example](hashing/README.md) - Simple (10.2 only) alist-based hash table implementation
 * [base64-stream example](streams/base64/README.md) - decode base64 MIME files
 * [process-pool example](process-pool/README.md) - process pools
+* [quickhash.cl example](hashing/README.md) - Simple (10.2 only) quick hash table implementation
 * [rot13b-stream example](streams/rot13b/README.md) - encode/decode rot13 strings
 * [telnet-server example](telnet-server/README.md) - access a running
    server with `telnet`
