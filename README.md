@@ -3,6 +3,7 @@ Allegro Common Lisp source code examples:
 * [process-pool example](process-pool/README.md) - process pools
 * [telnet-server example](telnet-server/README.md) - access a running
    server with `telnet`
+* [buffered queue example](buffered-queue/readme.md) - a restricted subclass of mp:queue with better performance
 
 Selected public Common Lisp git repositories from our [Github account](https://github.com/franzinc):
 
