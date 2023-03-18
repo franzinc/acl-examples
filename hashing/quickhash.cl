@@ -3,11 +3,11 @@
 ;; quickhash.cl
 ;; quick and dirty hash table, using the new extensible hash-table implementation.
 ;;
-;; See the file LICENSE for the full license governing this code.
-
+;; This code is in the public domain.
 ;;
 
-
+#-(version>= 11 0)
+(error "def-hash-table-implementation is only defined in 11.0 and later versions.")
 
 (eval-when (compile) (declaim (optimize (speed 3) (safety 1))))
 	   
@@ -175,7 +175,7 @@
 
 	
 (def-hash-table-implementation :quickhash
-    :based-on nil
+    :based-on nil ;; Start from scratch, with no :acl functionality
     :new-instance #'create-quickhash
     :count #'quick-hash-count
     :iterate #'quick-hash-iterate

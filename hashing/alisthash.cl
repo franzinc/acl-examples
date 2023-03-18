@@ -1,8 +1,19 @@
-
+;; -*- mode: common-lisp; package: excl -*-
+;;
+;; alisthash.cl
 ;; alist hash table: implement a hash-table with a pure alist structure.
+;;
+;; This code is in the public domain.
+;;
+
+#-(version>= 11 0)
+(error "def-hash-table-implementation is only defined in 11.0 and later versions.")
+
+(in-package :user)
 
 (defun make-alist-hash-instance (&rest args)
   (declare (ignore args))
+  ;; This vector will hold the alist, which starts empty:
   (vector nil))
 
 (defun alist-hash-count (hash-table)
@@ -41,7 +52,7 @@
 ;; receive hash-fcn and test arguments, in order to create closures
 ;; (rather than each  just naming a function to use in the decriptor vector).
 (def-hash-table-implementation :alist-hash
-    :based-on nil
+    :based-on nil ;; Start from scratch, with no :acl functionality
     :new-instance #'make-alist-hash-instance
     :count #'alist-hash-count
     :iterate #'alist-hash-iterate
